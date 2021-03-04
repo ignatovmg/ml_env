@@ -9,6 +9,8 @@ NUMPROC=$(nproc)
 # Specific commits to checkout
 SBLU_COMMIT=65c6348
 PRODY_VERSION=1.10.11
+PYTORCH_LIGHTNING_VERSION=1.2.1
+FAIRSCALE_VERSION="https://github.com/PyTorchLightning/fairscale/archive/pl_1.2.0.zip"
 
 # Setup conda env
 if [ ! -d "${ENV_DIR}" ]; then
@@ -27,10 +29,10 @@ export PATH="${ENV_DIR}/bin:${ENV_DIR}/lib:${PATH}"
 export LD_LIBRARY_PATH="${ENV_DIR}/lib:${LD_LIBRARY_PATH}"
 set -u
 
-pip install pytorch-lightning
+pip install pytorch-lightning==${PYTORCH_LIGHTNING_VERSION}
 
-# for sequential parallelism
-pip install https://github.com/PyTorchLightning/fairscale/archive/pl_1.2.0.zip
+# for model parallelism
+pip install ${FAIRSCALE_VERSION}
 
 # Install se3 cnn kernels
 pip install appdirs # for e3nn
