@@ -14,18 +14,17 @@ dependencies:
   - pytorch==1.6
   - cudatoolkit=10.2
   - dgl-cuda10.2
-  - pytorch-lightning=1.2
-  - numpy=1.19
-  - scipy==1.6
-  - griddataformats==0.5.*
-  - treelib==1.5.*
+  #- pytorch-lightning==1.2  # this line causes conflict
+  - numpy=1.*
+  - scipy==1.*
+  - griddataformats==0.*
   - mdtraj==1.9.*
   - networkx==2.4.*
   - pymol==2.3.*
   - openbabel=2.4
   - pandas
   - click
-  - scikit-learn
+  #- scikit-learn
   - pytest
   - plotly
   - rdkit

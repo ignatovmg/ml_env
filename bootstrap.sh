@@ -27,7 +27,7 @@ export PATH="${ENV_DIR}/bin:${ENV_DIR}/lib:${PATH}"
 export LD_LIBRARY_PATH="${ENV_DIR}/lib:${LD_LIBRARY_PATH}"
 set -u
 
-#pip install pytorch-lightning
+pip install pytorch-lightning
 
 # for sequential parallelism
 pip install https://github.com/PyTorchLightning/fairscale/archive/pl_1.2.0.zip
