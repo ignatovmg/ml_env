@@ -10,11 +10,11 @@ channels:
   - plotly
   - dglteam
 dependencies:
-  - python==3.7
-  - pytorch==1.6
+  - python=3.7
+  - pytorch==1.8.*
   - cudatoolkit=10.2
   - dgl-cuda10.2
-  #- pytorch-lightning==1.2  # this line causes conflict
+  #- pytorch-lightning==1.2.* #==1.2  # this line causes conflict
   - numpy=1.*
   - scipy==1.*
   - griddataformats==0.*
@@ -32,3 +32,4 @@ dependencies:
   - seaborn
   - tqdm
   - path.py
+  - ipykernel
