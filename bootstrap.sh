@@ -42,7 +42,7 @@ pip install git+https://github.com/AMLab-Amsterdam/lie_learn.git@51b494fc4211757
 pip install git+https://github.com/mariogeiger/se3cnn.git@546bc682887e1cb5e16b484c158c05f03377e4e9
 
 # Install mol_grid
-pip install git+https://bitbucket.org/ignatovmg/mol_grid.git@5544764fb6b5ccbd23cd2fae700bf558a12404bd
+pip install git+https://bitbucket.org/ignatovmg/mol_grid.git@65491c56efeb4415e55b66169bb398a6a32e3697
 
 # Install ProDy
 pip install pyparsing
